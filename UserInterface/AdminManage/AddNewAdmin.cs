@@ -9,10 +9,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace UserInterface.AdminManage
 {
-    public partial class AddNewAdmin : Form
+    public partial class AddNewAdmin : MetroForm
     {
         Admin addnewadmin = new Admin();
         AdminData admind = new AdminData();

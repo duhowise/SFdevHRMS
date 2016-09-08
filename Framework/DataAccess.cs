@@ -38,7 +38,7 @@ namespace Framework
         {
             SqlConnection connection = new SqlConnection(connectionString);
             SqlCommand cmd = connection.CreateCommand();
-            cmd.CommandText = "select  COUNT(DISTINCT employeeId) FROM employeejobassign where departmentNo='" + dept + "'";
+            cmd.CommandText = $"select  COUNT(DISTINCT employeeId) FROM employeejobassign where departmentNo='{dept}'";
             connection.Open();
             int result = ((int)cmd.ExecuteScalar());
             connection.Close();

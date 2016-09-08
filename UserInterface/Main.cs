@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace UserInterface
 {
-    public partial class Main : Form
+    public partial class Main : MetroForm
     {
          
         adminlogin al = new adminlogin();
@@ -18,6 +19,7 @@ namespace UserInterface
         public Main()
         {
             InitializeComponent();
+           
         }
 
         
@@ -27,6 +29,7 @@ namespace UserInterface
             LoginBox.Controls.Clear();
             leftlogo.Visible = true;
             LoginBox.Controls.Add(al);
+            al.Anchor=AnchorStyles.Left;
             adminloginboxbutton.Enabled = false;
             employeloginboxbutton.Enabled = true;
 
@@ -40,7 +43,8 @@ namespace UserInterface
             LoginBox.Controls.Clear();
             leftlogo.Visible = true;
             LoginBox.Controls.Add(el);
-            adminloginboxbutton.Enabled = true;
+            el.Anchor=AnchorStyles.None;
+           adminloginboxbutton.Enabled = true;
             employeloginboxbutton.Enabled = false;
         }
 

@@ -12,3 +12,8 @@ D:\NEw\SFdevHRMS\Framework\bin\Debug\Framework.pdb
 D:\NEw\SFdevHRMS\Framework\obj\Debug\Framework.csprojResolveAssemblyReference.cache
 D:\NEw\SFdevHRMS\Framework\obj\Debug\Framework.dll
 D:\NEw\SFdevHRMS\Framework\obj\Debug\Framework.pdb
+C:\Users\DUHO\Source\Repos\SFdevHRMS\Framework\bin\Debug\Framework.dll
+C:\Users\DUHO\Source\Repos\SFdevHRMS\Framework\bin\Debug\Framework.pdb
+C:\Users\DUHO\Source\Repos\SFdevHRMS\Framework\obj\Debug\Framework.dll
+C:\Users\DUHO\Source\Repos\SFdevHRMS\Framework\obj\Debug\Framework.pdb
+C:\Users\DUHO\Source\Repos\SFdevHRMS\Framework\obj\Debug\Framework.csprojResolveAssemblyReference.cache

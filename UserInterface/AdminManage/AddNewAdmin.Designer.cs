@@ -42,7 +42,7 @@
             // 
             this.adminidadd.AutoSize = true;
             this.adminidadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminidadd.Location = new System.Drawing.Point(163, 43);
+            this.adminidadd.Location = new System.Drawing.Point(75, 82);
             this.adminidadd.Name = "adminidadd";
             this.adminidadd.Size = new System.Drawing.Size(98, 25);
             this.adminidadd.TabIndex = 0;
@@ -51,7 +51,7 @@
             // adminidaddtext
             // 
             this.adminidaddtext.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminidaddtext.Location = new System.Drawing.Point(329, 37);
+            this.adminidaddtext.Location = new System.Drawing.Point(201, 79);
             this.adminidaddtext.Name = "adminidaddtext";
             this.adminidaddtext.Size = new System.Drawing.Size(284, 31);
             this.adminidaddtext.TabIndex = 1;
@@ -60,7 +60,7 @@
             // 
             this.adminnameadd.AutoSize = true;
             this.adminnameadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminnameadd.Location = new System.Drawing.Point(127, 108);
+            this.adminnameadd.Location = new System.Drawing.Point(41, 127);
             this.adminnameadd.Name = "adminnameadd";
             this.adminnameadd.Size = new System.Drawing.Size(134, 25);
             this.adminnameadd.TabIndex = 2;
@@ -69,7 +69,7 @@
             // adminnametext
             // 
             this.adminnametext.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminnametext.Location = new System.Drawing.Point(329, 108);
+            this.adminnametext.Location = new System.Drawing.Point(201, 127);
             this.adminnametext.Name = "adminnametext";
             this.adminnametext.Size = new System.Drawing.Size(284, 31);
             this.adminnametext.TabIndex = 3;
@@ -78,7 +78,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(89, 175);
+            this.label1.Location = new System.Drawing.Point(1, 182);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 25);
             this.label1.TabIndex = 4;
@@ -87,7 +87,7 @@
             // adminpasswordtext
             // 
             this.adminpasswordtext.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminpasswordtext.Location = new System.Drawing.Point(329, 175);
+            this.adminpasswordtext.Location = new System.Drawing.Point(201, 178);
             this.adminpasswordtext.Name = "adminpasswordtext";
             this.adminpasswordtext.Size = new System.Drawing.Size(284, 31);
             this.adminpasswordtext.TabIndex = 5;
@@ -95,7 +95,7 @@
             // buttonadmininsert
             // 
             this.buttonadmininsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonadmininsert.Location = new System.Drawing.Point(329, 265);
+            this.buttonadmininsert.Location = new System.Drawing.Point(201, 244);
             this.buttonadmininsert.Name = "buttonadmininsert";
             this.buttonadmininsert.Size = new System.Drawing.Size(112, 38);
             this.buttonadmininsert.TabIndex = 6;
@@ -106,7 +106,7 @@
             // clearadminadd
             // 
             this.clearadminadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearadminadd.Location = new System.Drawing.Point(501, 265);
+            this.clearadminadd.Location = new System.Drawing.Point(373, 244);
             this.clearadminadd.Name = "clearadminadd";
             this.clearadminadd.Size = new System.Drawing.Size(112, 38);
             this.clearadminadd.TabIndex = 7;
@@ -119,7 +119,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(729, 319);
+            this.ClientSize = new System.Drawing.Size(700, 340);
             this.Controls.Add(this.clearadminadd);
             this.Controls.Add(this.buttonadmininsert);
             this.Controls.Add(this.adminpasswordtext);

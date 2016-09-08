@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entities;
 using DataLayer;
+using MetroFramework;
+using MetroFramework.Controls;
 
 namespace UserInterface
 {
-    public partial class employeelogin : UserControl
+    public partial class employeelogin : MetroUserControl
     {
         Employee ep = new Employee();
         EmployeeLogin el = new EmployeeLogin();
@@ -37,19 +39,21 @@ namespace UserInterface
                 }
                 else
                 {
-                    MessageBox.Show(" Wrong Credentials");
+                    MetroMessageBox.Show(this, "Wrong Credentials", "Hey there!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 }
             }
             catch (Exception exc)
             {
 
-                MessageBox.Show("Error " + exc.Message);
+                MetroMessageBox.Show(this, exc.Message, "Something Went Wrong !", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
         }
 
         private void employeepassword_TextChanged(object sender, EventArgs e)
         {
-            employeepassword.PasswordChar = '.';
+           
         }
 
        

@@ -9,11 +9,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entities;
 using DataLayer;
+using MetroFramework;
+using MetroFramework.Controls;
+using MetroFramework.Forms;
+
+
 
 namespace UserInterface
 {
-    public partial class adminlogin : UserControl
+    
+    public partial class adminlogin :MetroUserControl
     {
+        
         Admin admin = new Admin();
         
         AdminLogin adlogin = new AdminLogin();
@@ -43,16 +50,16 @@ namespace UserInterface
                 }
                 else
                 {
+                    MetroMessageBox.Show(this, "Please Check Your Credentials","Hey there!",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
-                    MessageBox.Show(" Wrong Credentials");
                 }
 
             }
 
             catch(Exception exc)
             {
-
-                MessageBox.Show("Error "+exc.Message);
+                MetroMessageBox.Show(this,"Error " + exc.Message);
+             
             }
             }
                 
@@ -63,7 +70,7 @@ namespace UserInterface
 
         private void adminpassword_TextChanged(object sender, EventArgs e)
         {
-            adminpassword.PasswordChar = '.';
+            
         }
 
         public void Logout()

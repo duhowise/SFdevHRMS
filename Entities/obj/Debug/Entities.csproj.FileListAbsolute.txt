@@ -16,3 +16,8 @@ D:\NEw\SFdevHRMS\Entities\bin\Debug\Entities.dll
 D:\NEw\SFdevHRMS\Entities\bin\Debug\Entities.pdb
 D:\NEw\SFdevHRMS\Entities\obj\Debug\Entities.dll
 D:\NEw\SFdevHRMS\Entities\obj\Debug\Entities.pdb
+C:\Users\DUHO\Source\Repos\SFdevHRMS\Entities\bin\Debug\Entities.dll
+C:\Users\DUHO\Source\Repos\SFdevHRMS\Entities\bin\Debug\Entities.pdb
+C:\Users\DUHO\Source\Repos\SFdevHRMS\Entities\obj\Debug\Entities.dll
+C:\Users\DUHO\Source\Repos\SFdevHRMS\Entities\obj\Debug\Entities.pdb
+C:\Users\DUHO\Source\Repos\SFdevHRMS\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
