@@ -64,6 +64,7 @@ namespace UserInterface
             this.adminloginboxbutton.Size = new System.Drawing.Size(88, 23);
             this.adminloginboxbutton.TabIndex = 2;
             this.adminloginboxbutton.Text = "Admin Login";
+            this.adminloginboxbutton.UseSelectable = true;
             this.adminloginboxbutton.Click += new System.EventHandler(this.adminloginbox_Click);
             // 
             // employeloginboxbutton
@@ -73,6 +74,7 @@ namespace UserInterface
             this.employeloginboxbutton.Size = new System.Drawing.Size(96, 23);
             this.employeloginboxbutton.TabIndex = 3;
             this.employeloginboxbutton.Text = "Employee Login";
+            this.employeloginboxbutton.UseSelectable = true;
             this.employeloginboxbutton.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
@@ -102,7 +104,6 @@ namespace UserInterface
             this.Name = "Main";
             this.Resizable = false;
             this.Text = "SFdev HRMS";
-            this.Theme = MetroFramework.MetroThemeStyle.Light;
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework;
 using MetroFramework.Forms;
 
 namespace UserInterface.AdminManage
@@ -20,6 +21,9 @@ namespace UserInterface.AdminManage
         public AddNewAdmin()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            adminidaddtext.Focus();
+            this.Resizable = false;
         }
 
         private void buttonadmininsert_Click(object sender, EventArgs e)
@@ -35,23 +39,24 @@ namespace UserInterface.AdminManage
                     if (admind.insertAdmin(addnewadmin))
                     {
                         MessageBox.Show("Saved Admin Information");
+                        MetroMessageBox.Show(this, $"Successfully saved {addnewadmin.adminName}", "Awesome!", MessageBoxButtons.OK, MessageBoxIcon.Question);
                         clearadminadd_Click(sender, e);
                     }
                     else
                     {
-                        MessageBox.Show("Not Saved Admin Information");
+                        MetroMessageBox.Show(this, "You have to enter some data", "Wait a minute", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         clearadminadd_Click(sender, e);
 
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MetroMessageBox.Show(this, $"Something went wrong {ex.Message}", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Empty Input.");
+                MetroMessageBox.Show(this, "You have to enter some data", "Wait a minute", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 

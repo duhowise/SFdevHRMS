@@ -9,10 +9,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework;
+using MetroFramework.Forms;
 
 namespace UserInterface.AdminManage
 {
-    public partial class UpdateAdmin : Form
+    public partial class UpdateAdmin : MetroForm
     {
         Admin updateadmin = new Admin();
         AdminData updatedata = new AdminData();
@@ -36,23 +38,27 @@ namespace UserInterface.AdminManage
 
                     if (updatedata.updateAdmin(updateadmin))
                     {
-                        MessageBox.Show("Updated Admin Information");
+                        MetroMessageBox.Show(this, $"Successfully updated {updateadmin.adminName}", "Awesome !", MessageBoxButtons.OK, MessageBoxIcon.Question);
+
 
                     }
                     else
                     {
-                        MessageBox.Show("Not Saved Admin Information");
+                        MetroMessageBox.Show(this, $"We couldn't update {updateadmin.adminName}", "Wait a minute", MessageBoxButtons.OK, MessageBoxIcon.Question);
+
 
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                   MetroMessageBox.Show(this, $"Something went wrong {ex.Message}", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 }
             }
             else
             {
-                MessageBox.Show("Empty Input.");
+                MetroMessageBox.Show(this, "You have to enter some data", "Wait a minute", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
         }
 

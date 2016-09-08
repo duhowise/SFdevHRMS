@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataLayer;
 using Entities;
+using MetroFramework.Forms;
 using UserInterface.EmployeeManage;
 using UserInterface.JobAssign;
 using UserInterface.DepartmentManage;
@@ -23,49 +24,65 @@ using UserInterface.BankManage;
 
 namespace UserInterface.AdminManage
 {
-    public partial class AdminMain : Form
+    public partial class AdminMain : MetroForm
     {
+       
         Admin adminlogin = new Admin();
 
+        #region ManageAdministrator
         //admin manage
         AddNewAdmin ana;
         DeleteAnAdmin da;
         UpdateAdmin ua;
         CheckAllAdmin caa;
+        #endregion
 
+        #region manage Employee
         //Employee manage
         CreateNewEmployee cne;
         updateEmployeeInformation uei;
         CheckAllEmployee cae;
         DeleteAnEmployee dne;
+        #endregion
 
+        #region Assign Employee
         //Employee Assign
         AssignNewJob anj;
         ReassignJob aj;
         CheckAllAssignJob caaj;
         DeleteAnAssignJob daaj;
+        #endregion
 
+        #region ManageDepartment
         //Department manage
         AddNewDepartment and;
         UpdateDepartmentInfo udi;
         DeleteAnDepartmentInfo dadi;
         CheckAllDepartmentInfo cadi;
+        #endregion
 
+        #region ManagePerformance
         //Performance manage
         EvaluatePerformance ep;
         UpdateAnPerformance uap;
         DeleteAnPerformance dap;
         CheckAllPerformance cap;
+        #endregion
 
+        #region ManagePayroll
         //Payroll  manage
         AddNewSalaryBonus ansb;
         UpdateASalaryBonus uasb;
         DeleteASalaryBonus dasb;
         CheckAllSalaryBonus casb;
+        #endregion
 
+        #region Training
         //Training
         CheckAllTrainingAdmin cata;
+        #endregion
 
+        #region BankAccount
         //BankAccount
         AddNewBankInformation anbi;
         AddMoneyOnBank amob;
@@ -74,12 +91,9 @@ namespace UserInterface.AdminManage
         WithdrawMoneyFromBank wmfb;
         CheckAllBankMoneyInformation cabmi;
         CheckAllEmployeesPayment caep;
+        #endregion
 
-
-
-
-
-
+        #region BackGroundWorkers
 
         BackgroundWorker workerCheckAllAdmin;
         BackgroundWorker workerCheckAllEmployee;
@@ -89,11 +103,13 @@ namespace UserInterface.AdminManage
         BackgroundWorker workerCheckAllPayroll;
         BackgroundWorker workerCheckAllTraining;
         BackgroundWorker workerCheckAllBankAccount;
-        BackgroundWorker workerCheckAllEpayment;
+        BackgroundWorker workerCheckAllEpayment; 
+        #endregion
 
         public AdminMain(Admin login)
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
             this.loginadminlabel.Text = "Login As "+login.adminId;
 
             this.adminlogin = login;

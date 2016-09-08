@@ -27,7 +27,8 @@ namespace UserInterface
         public adminlogin()
         {
             InitializeComponent();
-            
+            adminid.Focus();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -58,8 +59,8 @@ namespace UserInterface
 
             catch(Exception exc)
             {
-                MetroMessageBox.Show(this,"Error " + exc.Message);
-             
+                MetroMessageBox.Show(this, $"Something went wrong {exc.Message}", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
             }
                 

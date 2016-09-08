@@ -39,14 +39,14 @@ namespace UserInterface
                 }
                 else
                 {
-                    MetroMessageBox.Show(this, "Wrong Credentials", "Hey there!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MetroMessageBox.Show(this, "Wrong Credentials", "Hey there!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 }
             }
             catch (Exception exc)
             {
 
-                MetroMessageBox.Show(this, exc.Message, "Something Went Wrong !", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MetroMessageBox.Show(this, exc.Message, "Something Went Wrong !", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }

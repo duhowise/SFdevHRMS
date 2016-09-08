@@ -1,4 +1,6 @@
-﻿namespace UserInterface.AdminManage
+﻿using MetroFramework.Controls;
+
+namespace UserInterface.AdminManage
 {
     partial class DeleteAnAdmin
     {
@@ -36,19 +38,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(87, 116);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(29, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 25);
+            this.label1.Size = new System.Drawing.Size(130, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Enter ID To Delete";
             // 
             // deleteadmin
             // 
-            this.deleteadmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteadmin.Location = new System.Drawing.Point(332, 244);
+            this.deleteadmin.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteadmin.Location = new System.Drawing.Point(259, 122);
             this.deleteadmin.Name = "deleteadmin";
-            this.deleteadmin.Size = new System.Drawing.Size(138, 37);
+            this.deleteadmin.Size = new System.Drawing.Size(80, 30);
             this.deleteadmin.TabIndex = 2;
             this.deleteadmin.Text = "Delete";
             this.deleteadmin.UseVisualStyleBackColor = true;
@@ -56,18 +58,18 @@
             // 
             // deleteadminidcomboBox
             // 
-            this.deleteadminidcomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteadminidcomboBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteadminidcomboBox.FormattingEnabled = true;
-            this.deleteadminidcomboBox.Location = new System.Drawing.Point(332, 116);
+            this.deleteadminidcomboBox.Location = new System.Drawing.Point(177, 69);
             this.deleteadminidcomboBox.Name = "deleteadminidcomboBox";
-            this.deleteadminidcomboBox.Size = new System.Drawing.Size(162, 33);
+            this.deleteadminidcomboBox.Size = new System.Drawing.Size(162, 28);
             this.deleteadminidcomboBox.TabIndex = 3;
             // 
             // DeleteAnAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 311);
+            this.ClientSize = new System.Drawing.Size(380, 169);
             this.Controls.Add(this.deleteadminidcomboBox);
             this.Controls.Add(this.deleteadmin);
             this.Controls.Add(this.label1);

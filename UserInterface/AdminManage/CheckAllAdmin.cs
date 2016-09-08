@@ -8,10 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace UserInterface.AdminManage
 {
-    public partial class CheckAllAdmin : Form
+    public partial class CheckAllAdmin : MetroForm
     {
         public CheckAllAdmin()
         {

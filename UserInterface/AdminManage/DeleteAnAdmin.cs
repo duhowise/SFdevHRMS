@@ -9,10 +9,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework;
+using MetroFramework.Forms;
 
 namespace UserInterface.AdminManage
 {
-    public partial class DeleteAnAdmin : Form
+    public partial class DeleteAnAdmin : MetroForm
     {
         Admin deleteadmininformation = new Admin();
         AdminData ad = new AdminData();
@@ -25,34 +27,43 @@ namespace UserInterface.AdminManage
 
         private void deleteadmin_Click_1(object sender, EventArgs e)
         {
-            deleteadmininformation.adminId = deleteadminidcomboBox.Text;
-            if (deleteadminidcomboBox.Text != "")
+            var dialogResult = MetroMessageBox.Show(this, $"Are you sure you want to delete {deleteadminidcomboBox.SelectedItem} ?","Wait a minute",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+            
+
+            if (dialogResult==DialogResult.Yes)
             {
-                new EmployeeJobAssignData().deleteFromJobAssign(deleteadminidcomboBox.Text);
-                new PerformanceData().deleteFromPerformance(deleteadminidcomboBox.Text);
-                try
+                #region DeleteAdmin
+                deleteadmininformation.adminId = deleteadminidcomboBox.Text;
+                if (deleteadminidcomboBox.Text != "")
                 {
-                    if (ad.deleteAdmin(deleteadmininformation))
+                    new EmployeeJobAssignData().deleteFromJobAssign(deleteadminidcomboBox.Text);
+                    new PerformanceData().deleteFromPerformance(deleteadminidcomboBox.Text);
+                    try
                     {
-                        MessageBox.Show("Successfully Delete ");
-                        DeleteAnAdmin_Load(sender, e);
+                        if (ad.deleteAdmin(deleteadmininformation))
+                        {
+                            MetroMessageBox.Show(this,$"Successfully Deleted {deleteadmininformation.adminName}", "Wait a minute",MessageBoxButtons.OK, MessageBoxIcon.Question);
+                            DeleteAnAdmin_Load(sender, e);
+                        }
+
+                        else
+                        {
+                            MetroMessageBox.Show(this, $"Couldnt delete {deleteadmininformation.adminName}", "Wait a minute", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        }
                     }
-
-                    else
+                    catch (Exception ex)
                     {
-                        MessageBox.Show("Not Delete ");
-
+                        MetroMessageBox.Show(this, $"Something went wrong {ex.Message}", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message);
-                }
+                    MetroMessageBox.Show(this, "You have to enter some data", "Wait a minute", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                } 
+                #endregion
             }
-            else
-            {
-                MessageBox.Show("Empty Input.");
-            }
+           
         }
 
         private void DeleteAnAdmin_Load(object sender, EventArgs e)
